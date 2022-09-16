@@ -1,7 +1,19 @@
 /*Um arquivo CSS para apresentação e aplicação de estilos*/
-body {
-  font-family: monospace;
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
 }
+
+* {
+    color: var(--fontColor);
+    font-family: helvética;
+}
+
+body{
+    background: var(--bg);
+}
+
 ul {
   font-family: helvética;
 }
@@ -14,11 +26,13 @@ li {
   list-style: square;
 }
 
-#msg {
-  font-family: monospace;
-}
 
 .light-theme {
-  color: #000000;
-  background: #00ff00;
+  --bg: var(--green);
+  --fontColor: var(--black);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
 }
