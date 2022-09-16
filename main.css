@@ -1,0 +1,24 @@
+/*Um arquivo CSS para apresentação e aplicação de estilos*/
+body {
+  font-family: monospace;
+}
+ul {
+  font-family: helvética;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+#msg {
+  font-family: monospace;
+}
+
+.light-theme {
+  color: #000000;
+  background: #00ff00;
+}
