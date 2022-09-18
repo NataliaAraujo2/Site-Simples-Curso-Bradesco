@@ -1,14 +1,14 @@
 /*Um arquivo CSS para apresentação e aplicação de estilos*/
 :root {
-  --pink: #efa1ec;
+  --gold: #daa520;
   --white: #ffffff;
-  --blue: #200de9;
   --black: #000000;
+  --purple_violet: #ee82ee;
 }
 
 * {
   color: var(--fontColor);
-  font-family: helvética;
+  font-family: 'PT Sans', sans-serif;
 }
 
 body {
@@ -28,17 +28,19 @@ li {
 }
 
 .light-theme {
-  --bg: var(--pink);
+  --bg: var(--purple_violet);
   --fontColor: var(--black);
   --btnBg: var(--black);
-  --btnFontColor: var(--white);
+  --btnFontColor: var(--purple_violet);
+  --titleFontColor: var(--black);
 }
 
 .dark-theme {
   --bg: var(--black);
   --fontColor: var(--white);
-  --btnBg: var(--pink);
+  --btnBg: var(--purple_violet);
   --btnFontColor: var(--black);
+  --titleFontColor: var(--purple_violet);
 }
 
 .button {
@@ -46,10 +48,6 @@ li {
   background-color: var(--btnBg);
 }
 
-.btn:focus {
-    outline-style: none;
-  }
-  
 .btn {
   position: absolute;
   top: 20px;
@@ -62,4 +60,10 @@ li {
   background-color: var(--btnBg);
 }
 
-
+.title {
+  color: var(--titleFontColor);
+  font-size: 75px;
+  font-family: "PT Serif", serif;
+  text-align: center;
+  margin: 0%;
+}
