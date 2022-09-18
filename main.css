@@ -8,7 +8,7 @@
 
 * {
   color: var(--fontColor);
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 body {
@@ -21,6 +21,67 @@ ul {
 
 li {
   list-style: circle;
+}
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0,75rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentsTasks {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  height: 300px;
+  width: 300px;
+}
+
+.fa-thumbs-down{
+  font-size: 3em;
+  position: absolute;
+  top: -20px;
+  left: 120px;  
+}
+.tasksDone {
+  position: absolute;
+  top: 150px;
+  left: 1150px;
+  height: 300px;
+  width: 300px;
+}
+
+.fa-5x {
+  font-size: 3em;
+  position: absolute;
+  top: -25px;
+  left: 120px;
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--black);
+  padding: 20px;
+}
+
+.listDone {
+  text-decoration: line-through;
 }
 
 .list {
@@ -42,6 +103,13 @@ li {
   --btnFontColor: var(--black);
   --titleFontColor: var(--purple_violet);
 }
+
+.subtitle {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 30px;
+} 
+
 
 .button {
   color: var(--btnFontColor);
@@ -67,3 +135,4 @@ li {
   text-align: center;
   margin: 0%;
 }
+
